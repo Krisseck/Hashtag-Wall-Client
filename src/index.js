@@ -4,8 +4,6 @@ window.$ = jQuery;
 import Isotope from 'isotope-layout';
 import imagesLoaded from 'imagesloaded';
 
-import Handlebars from 'handlebars/dist/cjs/handlebars';
-
 import './sass/style.scss';
 
 import cardTemplate from './handlebars-init';
@@ -27,6 +25,7 @@ $(document).ready(function() {
     });
 
     imagesLoaded("#card-container", function() {
+
       iso = new Isotope("#card-container", {
         itemSelector: ".card",
         transitionDuration: 0,
@@ -36,23 +35,24 @@ $(document).ready(function() {
           fitWidth: true
         }
       });
+
     });
 
   });
 
-  setInterval(updateInstagram, window.hashtagWallConfig.updateInterval);
+  setInterval(updateFeed, window.hashtagWallConfig.updateInterval);
 
 });
 
-function updateInstagram() {
+function updateFeed() {
 
   var timestamp = new Date($("#card-container .card:first-of-type").data('time'));
 
   timestamp = timestamp.getTime();
 
-  $.getJSON(window.hashtagWallConfig.apiBaseUrl+"/posts/"+ timestamp, function(posts) {
+  $.getJSON(window.hashtagWallConfig.apiBaseUrl + "/posts/" + timestamp, function(posts) {
 
-    if(posts.length>0) {
+    if(posts.length > 0) {
 
       var elements = [];
 
