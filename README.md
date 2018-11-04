@@ -23,7 +23,7 @@ Admin: http://hashtag.polso.info:8080/admin (username: admin, password: password
 
 * Tested with **Node.js v10.13.0 (LTS)**, should work with other 10.x versions aswell.
 * [Yarn](https://yarnpkg.com/)
-* MySQL-server
+* The default theme has been built for 1080p (1920x1080) display, but should also work in other resolutions
 
 
 ## Install
