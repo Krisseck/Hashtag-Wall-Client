@@ -8,7 +8,7 @@ module.exports = {
     main: './src/index.js'
   },
   output: {
-    filename: 'main.js',
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist')
   },
   module: {
@@ -36,7 +36,6 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      inject: false,
       hash: true,
       template: './src/index.html',
       filename: 'index.html'
