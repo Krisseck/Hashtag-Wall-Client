@@ -2,7 +2,7 @@
 
 [![dependencies](https://david-dm.org/Krisseck/Hashtag-Wall-Client.svg)](https://david-dm.org/Krisseck/Hashtag-Wall-Client)  [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Krisseck/Hashtag-Wall-Client/issues)
 
-[![Hashtag Wall Client Example](https://github.com/Krisseck/Hashtag-Wall-Client/blob/master/hashtag-wall-example.jpg)](https://github.com/Krisseck/Hashtag-Wall-Client/blob/master/hashtag-wall-example.jpg)
+[![Hashtag Wall Client Example](https://github.com/Krisseck/Hashtag-Wall-Client/blob/master/hashtag-wall-example.jpg)](http://hashtag.polso.info)
 
 A website that displays posts from several social media sources. Automatically updates the feed with set intervals. Uses [Hashtag-Wall-Server](https://github.com/Krisseck/Hashtag-Wall-Server) to fetch the data.
 
