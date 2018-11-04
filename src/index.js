@@ -8,17 +8,15 @@ import Handlebars from 'handlebars/dist/cjs/handlebars';
 
 import './sass/style.scss';
 
-import config from './config';
-
 import cardTemplate from './handlebars-init';
 
 var iso = {};
 
 $(document).ready(function() {
 
-  $("#title-hashtag").text(config.hashtag);
+  $("#title-hashtag").text(window.hashtagWallConfig.hashtag);
 
-  $.getJSON(config.apiBaseUrl + "/posts", function(posts) {
+  $.getJSON(window.hashtagWallConfig.apiBaseUrl + "/posts", function(posts) {
 
     posts.forEach(function(item) {
 
@@ -42,7 +40,7 @@ $(document).ready(function() {
 
   });
 
-  setInterval(updateInstagram, config.updateInterval);
+  setInterval(updateInstagram, window.hashtagWallConfig.updateInterval);
 
 });
 
@@ -52,7 +50,7 @@ function updateInstagram() {
 
   timestamp = timestamp.getTime();
 
-  $.getJSON(config.apiBaseUrl+"/posts/"+ timestamp, function(posts) {
+  $.getJSON(window.hashtagWallConfig.apiBaseUrl+"/posts/"+ timestamp, function(posts) {
 
     if(posts.length>0) {
 

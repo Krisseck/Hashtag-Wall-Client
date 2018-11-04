@@ -10,6 +10,7 @@
     "jquery": "^3.3.1"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^1.0.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^2.0.0",
@@ -25,7 +26,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "dev": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
   "repository": {
