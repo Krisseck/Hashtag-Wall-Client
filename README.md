@@ -1,6 +1,6 @@
 # Hashtag Wall Client
 
-[![dependencies](https://david-dm.org/Krisseck/Hashtag-Wall-Client.svg)](https://david-dm.org/Krisseck/Hashtag-Wall-Server)  [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Krisseck/Hashtag-Wall-Server/issues)
+[![dependencies](https://david-dm.org/Krisseck/Hashtag-Wall-Client.svg)](https://david-dm.org/Krisseck/Hashtag-Wall-Client)  [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Krisseck/Hashtag-Wall-Client/issues)
 
 [![Hashtag Wall Client Example](https://github.com/Krisseck/Hashtag-Wall-Client/blob/master/hashtag-wall-example.jpg)](https://github.com/Krisseck/Hashtag-Wall-Client/blob/master/hashtag-wall-example.jpg)
 
