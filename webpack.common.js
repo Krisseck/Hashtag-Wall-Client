@@ -31,6 +31,17 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.(png|jp(e*)g|svg)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              name: './img/[hash].[ext]'
+            }
+          }
+        ]
       }
     ]
   },
